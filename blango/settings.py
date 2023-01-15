@@ -53,7 +53,8 @@ class Dev(Configuration):
         'crispy_forms',
         'crispy_bootstrap5',
         'debug_toolbar',
-        'blango_auth'
+        'blango_auth',
+        'rest_framework'
     ]
 
     MIDDLEWARE = [
