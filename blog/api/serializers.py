@@ -2,6 +2,10 @@ from rest_framework import serializers
 from blango_auth.models import User
 from blog.models import Post, Tag, Comment
 
+class TagSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tag
+        fields = "__all__"
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
